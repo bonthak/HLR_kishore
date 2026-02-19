@@ -5,8 +5,8 @@ services:
     container_name: hlr-postgres
     environment:
       POSTGRES_DB: hlrdb
-      POSTGRES_USER: hlr_user
-      POSTGRES_PASSWORD: hlr_password
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Interview@2025
     ports:
       - "5432:5432"
     volumes:

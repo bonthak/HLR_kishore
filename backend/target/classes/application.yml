@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/hlrdb
-    username: hlr_user
-    password: hlr_password
+    username: postgres
+    password: Interview@2025
   jpa:
     hibernate:
       ddl-auto: validate
