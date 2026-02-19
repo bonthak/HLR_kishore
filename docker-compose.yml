@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:16
+    container_name: hlr-postgres
+    environment:
+      POSTGRES_DB: hlrdb
+      POSTGRES_USER: hlr_user
+      POSTGRES_PASSWORD: hlr_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - hlr_pg_data:/var/lib/postgresql/data
+
+volumes:
+  hlr_pg_data:
